@@ -1,12 +1,7 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ProductList from './components/Product/ProductList';
+import DanhSachSanPham from './containers/DanhSachSanPham';
 function App() {
   return (
-    <>
-
-      <ProductList />
-    </>
+    <DanhSachSanPham />
   );
 }
 
