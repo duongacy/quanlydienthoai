@@ -1,7 +1,7 @@
-import DanhSachSanPham from './containers/DanhSachSanPham';
+import Home from "./UserManagement";
 function App() {
   return (
-    <DanhSachSanPham />
+    <Home />
   );
 }
 

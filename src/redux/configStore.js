@@ -1,9 +1,10 @@
-import { combineReducers, createStore } from 'redux'
-import { gioHangReducer } from "./reducers/gioHangReducer";
+import { combineReducers, createStore } from 'redux';
+import { userReducer } from './reducers/userReducer';
 
 const rootReducer = combineReducers({
-    // Liet ke tat ca cac state o day
-    gioHangState : gioHangReducer
+    userState: userReducer
 })
 
-export const store = createStore(rootReducer);
+export const store = createStore(rootReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()    
+); 
